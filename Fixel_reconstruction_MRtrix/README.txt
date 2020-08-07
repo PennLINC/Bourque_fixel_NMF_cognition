@@ -1,7 +1,7 @@
 #Steps from QSIprep outputs to smoothed fixels for creating the NMF components
 #Reconstruction with MRtrix3 according to this guideline with a few modification for single-shell 3 t-issue https://mrtrix.readthedocs.io/en/latest/fixel_based_analysis/mt_fibre_density_cross-section.html. This reconstruction workflow uses a lot of independent scripts to run sequentially because at the time of the analysis single-shell 3-tissue was an independent fork of MRtrix3, also some steps require to run on all sample, others on template subjects only. Some MRtrix3 functions used in these scripts may be outdated, a new release has made changes to only a few commands (functions).
 
-#Unless specified all these steps run on the qsiprep-0.4.5.simg image which contains all code from the main MRtrix3 RC3
+#Unless specified in the scripts all these steps run on the qsiprep-0.4.5.simg image which contains all code from the main MRtrix3 RC3
 
 #1 Convert nii.gz to .mif files and update the size of the anatomical image (T1) to match the size of the DWI images
 # 1.RUN_nii2mif.sh
