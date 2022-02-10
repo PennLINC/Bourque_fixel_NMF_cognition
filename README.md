@@ -21,32 +21,43 @@ Convert nii.gz to .mif files (for MRtrix) and update the size of the anatomical 
 ### 2.RUN_response_function.sh
 Calculate the response function for the 3 tissue types (WM, GM, CSF) with single-shell 3-tissue MRtrix fork for our 30 template subjects. 
 
-## 3.RUN_response_mean.sh
+### 3.RUN_response_mean.sh
 Average the response function of the template subjects.
 
-## 4.RUN_FODs.sh
+### 4.RUN_FODs.sh
 Estimate Fiber Orientation Distributions (FODs) for all individuals based on the tissue types' response functions.
 
-## 5.RUN_normalise.sh
+### 5.RUN_normalise.sh
 Bias correction and global intensity normalisation of all individual's FOD image.
 
-## 6.RUN_template_creation.sh
+### 6.RUN_template_creation.sh
 Create the population FOD template based on the FOD image of the 30 template subjects.
 
-## 7.RUN_FODreg.sh
+### 7.RUN_FODreg.sh
 Register all subjects FODs to the FOD template.
 
-## 8.RUN_fixel_mask.sh
+### 8.RUN_fixel_mask.sh
 Create the fixel mask - the intersection of all subject masks in template space.
 
-## 9.RUN_segment_fixel.sh
+### 9.RUN_segment_fixel.sh
 Segment fixel (calculate fiber density - FD) and reorient and assign fixels to the template fixels. Compute Fibre Cross-Section (FC), and Fiber Density Cross-Section (FDC) - our metric of interest.
 
-## 10.RUN_tracks.sh
+### 10.RUN_tracks.sh
 Perform whole brain fibre tractography of the FOD template.
 
-## 11.RUN_smoothing.sh
+### 11.RUN_smoothing.sh
 Create the fixel-to-fixel connectivity to then smooth the fixel data accordingly.
+
+# NMF
+
+###
+
+
+### Software Utilized for NMF
+ConFixel (https://github.com/PennLINC/ConFixel) and Brainparts (https://github.com/asotiras/brainparts)
+
+# GAMs and Figures
+
 
 
 
