@@ -6,19 +6,19 @@ This project includes typically-developing PNC participants - LTN criteria was u
 
 # Preprocessing
 
-## 0.Run_QSIPrep
+### 0.Run_QSIPrep
 Raw DWI -> Denoising procedure; correction for motion, Gibb's ringing artifact, distortion with a B0 field map, and eddy current; coregistration to T1; quality assurance (mean framewise displacement, and number of bad slices); and voxel upsampling (1.25mm).
 
-## 0.QSIPrep_download
+### 0.QSIPrep_download
 Download the preprocessed DWI output data.
 
 
 **The following steps to reconstruct FDC follow the recommended FBA pipeline (https://mrtrix.readthedocs.io/en/latest/fixel_based_analysis/mt_fibre_density_cross-section.html)**
 
-## 1.RUN_nii2mif.sh
+### 1.RUN_nii2mif.sh
 Convert nii.gz to .mif files (for MRtrix) and update the size of the anatomical image (T1) to match the size of the DWI images.
 
-## 2.RUN_response_function.sh
+### 2.RUN_response_function.sh
 Calculate the response function for the 3 tissue types (WM, GM, CSF) with single-shell 3-tissue MRtrix fork for our 30 template subjects. 
 
 ## 3.RUN_response_mean.sh
