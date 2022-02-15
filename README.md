@@ -2,7 +2,7 @@
 
 This repository is divided into three (3) sets of scripts. Preprocessing takes the raw diffusion data to Fixel Density Cross-Section (FDC) metric using the QSIPrep preprocessing pipeline and the Fixel-Based Analysis pipeline from MRtrix3. NMF includes the steps required for the non-negative matrix factorization of the FDC metric. The figures and GAMs folder includes all scripts to generate the paper's figures and investigate the developmental and cognitive effects of the WM covariance networks delineated with NMF. Details below.
 
-This project includes typically-developing PNC participants - LTN criteria was used. 
+This project includes typically-developing PNC participants - LTN criteria was used. Refer to Sample_creation.R for how the sample was selected and for the list of bblids.
 
 # Preprocessing
 
