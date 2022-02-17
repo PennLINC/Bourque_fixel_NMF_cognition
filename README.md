@@ -1,6 +1,6 @@
 # NMF_fixel_psychopatho
 
-This repository is divided into three (3) sets of scripts. Preprocessing takes the raw diffusion data to Fixel Density Cross-Section (FDC) metric using the QSIPrep preprocessing pipeline and the Fixel-Based Analysis pipeline from MRtrix3. NMF includes the steps required for the non-negative matrix factorization of the FDC metric. The figures and GAMs folder includes all scripts to generate the paper's figures and investigate the developmental and cognitive effects of the WM covariance networks delineated with NMF. Details below.
+This repository is divided into three (3) sets of scripts. **Preprocessing** takes the raw diffusion data to Fixel Density Cross-Section (FDC) metric using the QSIPrep preprocessing pipeline and the Fixel-Based Analysis pipeline from MRtrix3. **NMF** includes the steps required for the non-negative matrix factorization of the FDC metric. The **GAMs and Figures** folder includes all scripts to generate the paper's figures and investigate the developmental and cognitive effects of the WM covariance networks delineated with NMF, using Generalized Additive Models (GAMs). Details below.
 
 This project includes typically-developing PNC participants - LTN criteria was used. Refer to Sample_creation.R for how the sample was selected and for the list of bblids.
 
@@ -57,6 +57,21 @@ Create the fixel-to-fixel connectivity to then smooth the fixel data accordingly
 ConFixel (https://github.com/PennLINC/ConFixel) and Brainparts (https://github.com/asotiras/brainparts)
 
 # GAMs and Figures
+
+### FDC_development_GAMs.R
+-Gathers sociodemographic and cognitive data of the PNC, preprocessing QC metrics, as well as the NMF output containing individual's loadings for all 14 covariance networks (which we use as the dependent variable in the GAMs).
+-Investigates the linear and non-linear effects of age on individual's covariance network loadings (which corresponds to FDC - higher loading is correlated with higher FDC) using GAMs.
+-Calculates age's partial R2 from those GAMs.
+-Makes the paper's figures.
+-Sensitivity analyses for the age effects (controlling for Total Brain Volume).
+-Supplementary analyses looking at the developmental main effect of sex and sex by age interactions.
+
+### FDC_underlies_executive_functioning_GAMs.R
+-This script is dependent on **FDC_development_GAMs.R** and needs to be run after it. 
+-Investigate the linear association between executive functioning (efficiency - EE and accuracy - ECRA) and individual's covariance network loadings using GAMs (in which age is also controlled for).
+-Calculates executive function's (EE and ECRA) partial R2 from those GAMs.
+-Makes the paper's figures.
+-Sensitivity analyses for the executive functioning effects (controlling for Total Brain Volume).
 
 
 
