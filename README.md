@@ -59,11 +59,11 @@ ConFixel (https://github.com/PennLINC/ConFixel) and Brainparts (https://github.c
 # GAMs and Figures
 
 ### FDC_development_GAMs.R
--Gathers sociodemographic and cognitive data of the PNC, preprocessing QC metrics, as well as the NMF output containing individual's loadings for all 14 covariance networks (which we use as the dependent variable in the GAMs).
--Investigates the linear and non-linear effects of age on individual's covariance network loadings (which corresponds to FDC - higher loading is correlated with higher FDC) using GAMs.
--Calculates age's partial R2 from those GAMs.
--Makes the paper's figures.
--Sensitivity analyses for the age effects (controlling for Total Brain Volume).
+-Gathers sociodemographic and cognitive data of the PNC, preprocessing QC metrics, as well as the NMF output containing individual's loadings for all 14 covariance networks (which we use as the dependent variable in the GAMs).  
+-Investigates the linear and non-linear effects of age on individual's covariance network loadings (which corresponds to FDC - higher loading is correlated with higher FDC) using GAMs.  
+-Calculates age's partial R2 from those GAMs.  
+-Makes the paper's figures.  
+-Sensitivity analyses for the age effects (controlling for Total Brain Volume).  
 -Supplementary analyses looking at the developmental main effect of sex and sex by age interactions.
 
 ### FDC_underlies_executive_functioning_GAMs.R
