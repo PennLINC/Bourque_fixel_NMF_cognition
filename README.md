@@ -67,10 +67,10 @@ ConFixel (https://github.com/PennLINC/ConFixel) and Brainparts (https://github.c
 -Supplementary analyses looking at the developmental main effect of sex and sex by age interactions.
 
 ### FDC_underlies_executive_functioning_GAMs.R
--This script is dependent on **FDC_development_GAMs.R** and needs to be run after it. 
--Investigate the linear association between executive functioning (efficiency - EE and accuracy - ECRA) and individual's covariance network loadings using GAMs (in which age is also controlled for).
--Calculates executive function's (EE and ECRA) partial R2 from those GAMs.
--Makes the paper's figures.
+-This script is dependent on **FDC_development_GAMs.R** and needs to be run after it.  
+-Investigate the linear association between executive functioning (efficiency - EE and accuracy - ECRA) and individual's covariance network loadings using GAMs (in which age is also controlled for).  
+-Calculates executive function's (EE and ECRA) partial R2 from those GAMs.  
+-Makes the paper's figures.  
 -Sensitivity analyses for the executive functioning effects (controlling for Total Brain Volume).
 
 
