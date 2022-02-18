@@ -40,13 +40,16 @@ Register all subjects FODs to the FOD template.
 Create the fixel mask - the intersection of all subject masks in template space.
 
 ### 9.RUN_segment_fixel.sh
-Segment fixel (calculate fiber density - FD) and reorient and assign fixels to the template fixels. Compute Fibre Cross-Section (FC), and Fiber Density Cross-Section (FDC) - our metric of interest.
+Segment fixel (calculate fiber density - FD) and reorient and assign fixels to the template fixels.
 
-### 10.RUN_tracks.sh
+### 10.RUN_fdc.sh
+Compute Fibre Cross-Section (FC), and Fiber Density Cross-Section (FDC) - the latter being our metric of interest.
+
+### 11.RUN_tracks.sh
 Perform whole brain fibre tractography of the FOD template.
 
-### 11.RUN_smoothing.sh
-Create the fixel-to-fixel connectivity to then smooth the fixel data accordingly.
+### 12.RUN_smoothing.sh
+Create the fixel-to-fixel connectivity to then smooth the fixel data (FD, FC and FDC) accordingly.
 
 # NMF
 
