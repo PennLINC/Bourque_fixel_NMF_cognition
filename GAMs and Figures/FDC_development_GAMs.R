@@ -337,7 +337,7 @@ p1<- p1+theme(text = element_text(size=this_font_size),
 
 p1
 # derivative calculation and plot object
-d1 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[1]],smooth_var = "Age") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
+d1 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[1]],smooth_var = "s(Age)") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
   theme(plot.margin=unit(c(0,0,0,0),"cm")) #Top, left,Bottom, right
 # stick plots together
 scatter <- list(p1)
@@ -368,7 +368,7 @@ p2<- p2+theme(text = element_text(size=this_font_size),
 
 p2
 # derivative calculation and plot object
-d2 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[2]],smooth_var = "Age") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
+d2 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[2]],smooth_var = "s(Age)") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
   theme(plot.margin=unit(c(0,0,0,0),"cm")) #Top, left,Bottom, right
 # stick plots together
 scatter <- list(p2)
@@ -400,7 +400,7 @@ p3<- p3+theme(text = element_text(size=this_font_size),
 
 p3
 # derivative calculation and plot object
-d3 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[3]],smooth_var = "Age") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
+d3 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[3]],smooth_var = "s(Age)") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
   theme(plot.margin=unit(c(0,0,0,0),"cm")) #Top, left,Bottom, right
 # stick plots together
 scatter <- list(p3)
@@ -432,7 +432,7 @@ p4<- p4+theme(text = element_text(size=this_font_size),
 
 p4
 # derivative calculation and plot object
-d4 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[4]],smooth_var = "Age") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
+d4 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[4]],smooth_var = "s(Age)") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
   theme(plot.margin=unit(c(0,0,0,0),"cm")) #Top, left,Bottom, right
 # stick plots together
 scatter <- list(p4)
@@ -464,7 +464,7 @@ p5<- p5+theme(text = element_text(size=this_font_size),
 
 p5
 # derivative calculation and plot object
-d5 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[5]],smooth_var = "Age") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
+d5 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[5]],smooth_var = "s(Age)") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
   theme(plot.margin=unit(c(0,0,0,0),"cm")) #Top, left,Bottom, right
 # stick plots together
 scatter <- list(p5)
@@ -496,7 +496,7 @@ p6<- p6+theme(text = element_text(size=this_font_size),
 
 p6
 # derivative calculation and plot object
-d6 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[6]],smooth_var = "Age") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
+d6 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[6]],smooth_var = "s(Age)") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
   theme(plot.margin=unit(c(0,0,0,0),"cm")) #Top, left,Bottom, right
 # stick plots together
 scatter <- list(p6)
@@ -528,7 +528,7 @@ p7<- p7+theme(text = element_text(size=this_font_size),
 
 p7
 # derivative calculation and plot object
-d7 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[7]],smooth_var = "Age") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
+d7 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[7]],smooth_var = "s(Age)") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
   theme(plot.margin=unit(c(0,0,0,0),"cm")) #Top, left,Bottom, right
 # stick plots together
 scatter <- list(p7)
@@ -560,7 +560,7 @@ p8<- p8+theme(text = element_text(size=this_font_size),
 
 p8
 # derivative calculation and plot object
-d8 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[8]],smooth_var = "Age") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
+d8 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[8]],smooth_var = "s(Age)") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
   theme(plot.margin=unit(c(0,0,0,0),"cm")) #Top, left,Bottom, right
 # stick plots together
 scatter <- list(p8)
@@ -592,7 +592,7 @@ p9<- p9+theme(text = element_text(size=this_font_size),
 
 p9
 # derivative calculation and plot object
-d9 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[9]],smooth_var = "Age") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
+d9 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[9]],smooth_var = "s(Age)") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
   theme(plot.margin=unit(c(0,0,0,0),"cm")) #Top, left,Bottom, right
 # stick plots together
 scatter <- list(p9)
@@ -624,7 +624,7 @@ p10<- p10+theme(text = element_text(size=this_font_size),
 
 p10
 # derivative calculation and plot object
-d10 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[10]],smooth_var = "Age") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
+d10 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[10]],smooth_var = "s(Age)") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
   theme(plot.margin=unit(c(0,0,0,0),"cm")) #Top, left,Bottom, right
 # stick plots together
 scatter <- list(p10)
@@ -656,7 +656,7 @@ p11<- p11+theme(text = element_text(size=this_font_size),
 
 p11
 # derivative calculation and plot object
-d11 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[11]],smooth_var = "Age") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
+d11 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[11]],smooth_var = "s(Age)") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
   theme(plot.margin=unit(c(0,0,0,0),"cm")) #Top, left,Bottom, right
 # stick plots together
 scatter <- list(p11)
@@ -688,7 +688,7 @@ p12<- p12+theme(text = element_text(size=this_font_size),
 
 p12
 # derivative calculation and plot object
-d12 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[12]],smooth_var = "Age") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
+d12 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[12]],smooth_var = "s(Age)") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
   theme(plot.margin=unit(c(0,0,0,0),"cm")) #Top, left,Bottom, right
 # stick plots together
 scatter <- list(p12)
@@ -720,7 +720,7 @@ p13<- p13+theme(text = element_text(size=this_font_size),
 
 p13
 # derivative calculation and plot object
-d13 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[13]],smooth_var = "Age") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
+d13 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[13]],smooth_var = "s(Age)") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
   theme(plot.margin=unit(c(0,0,0,0),"cm")) #Top, left,Bottom, right
 # stick plots together
 scatter <- list(p13)
@@ -752,7 +752,7 @@ p14<- p14+theme(text = element_text(size=this_font_size),
 
 p14
 # derivative calculation and plot object
-d14 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[14]],smooth_var = "Age") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
+d14 <- get_derivs_and_plot(modobj = gamModels_age_fdc[[14]],smooth_var = "s(Age)") + theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), panel.background = element_blank()) + theme(axis.line.x = element_line(colour = 'gray20', size = 1.5), axis.line.y = element_line(colour = 'gray20', size = 1.5), axis.ticks.length = unit(.25, "cm"), axis.text = element_text(size=50), axis.title = element_text(size=50)) + guides(fill = guide_colorbar(draw.ulim = F, frame.colour = "gray20", frame.linetype=1, frame.linewidth = 3 , ticks=T, ticks.linewidth = 2,  ticks.colour = "gray20", reverse = F,direction = "vertical",title.position = "top"))  +
   theme(plot.margin=unit(c(0,0,0,0),"cm")) #Top, left,Bottom, right
 # stick plots together
 scatter <- list(p14)
